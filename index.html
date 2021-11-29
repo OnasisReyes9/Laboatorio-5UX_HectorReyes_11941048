@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athenas Airlines</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body style="background-color: whitesmoke">
+
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light " style="background-color: thistle;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><b> 
+                <img src="data:image/jpeg;base64,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" style="height: 1cm; width: 1cm;"/> Athenas Airlines</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#section1">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#section2">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#section3">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Inicio-->
+    <section id="section1">
+        <!--Carrusel-->
+        <div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img id="formato_imagenes " src="https://cdn.pixabay.com/photo/2018/12/23/19/52/cardiff-3891731_1280.jpg" style="height: 13cm;" class="d-block w-100" ;/>
+                    </div>
+                    <div class="carousel-item">
+                        <img id="formato_imagenes " src="https://live.staticflickr.com/7910/45801316644_2c0b256695_b.jpg" style="height: 13cm" class="d-block w-100" ;/>
+                    </div>
+                    <div class="carousel-item">
+                        <img id="formato_imagenes " src="https://upload.wikimedia.org/wikipedia/commons/5/59/Parque_das_Na%C3%A7%C3%B5es_Lisboa_%28cropped%29.jpg" style="height: 13cm;" class="d-block w-100" ;/>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+            <br>
+            <br>
+        </div>
+    </section>
+
+    <!--Sobre Nosotros 2-->
+    <section id="section2">
+        <div>
+            <div class="container">
+                <div class="row ">
+                    <h3 style="color: black;"> <b>Sobre Nosotros</b></h3>
+                    <br>
+                    <br>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="card mb-5 " style="width: 18rem; border-color: black; border-radius: 0px; ">
+                            <div class="card-body " style="background-color: thistle;">
+                                <h5 class="card-title ">
+                                    <img id="formato_imagenes " src="./imagenes/computadora.jpg " class="img-fluid " ;/>
+                                </h5>
+                                <h6 class="card-subtitle mb-2 text-muted ">Una decada de grandes experiencias</h6>
+                                <p class="card-text "> 10 años mostando nuevas experiencias y aventuras en los mejores lugares del mundo.</p>
+                                <button type="button" class="btn btn-primary">Nuestra Historia</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="col-xs-12 col-md-6 col-lg-4 ">
+                        <div class="card mb-5 " style="width: 18rem; border-color: black; border-radius: 0px; ">
+                            <div class="card-body " style="background-color: thistle;">
+                                <h5 class="card-title ">
+                                    <img id="formato_imagenes " src="./imagenes/mapa.jpg " class="img-fluid " ;/>
+                                </h5>
+                                <h6 class="card-subtitle mb-2 text-muted ">Vuelos Internacionales</h6>
+                                <p class="card-text "> Revisa nuestro catálogo de vuelos hacia diferentes partes del mundo y conoce los diferentes paquetes y precios que ofrecemos.
+                                </p>
+                                <button type="button" class="btn btn-secondary">Ver Catálogo</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="col-xs-12 col-md-6 col-lg-4 ">
+                        <div class="card mb-5 " style="width: 18rem; border-color: black; border-radius: 0px; ">
+                            <div class="card-body " style="background-color: thistle;">
+                                <h5 class="card-title ">
+                                    <img id="formato_imagenes " src="./imagenes/viajar.jpg" class="img-fluid " ;/>
+                                </h5>
+                                <h6 class="card-subtitle mb-2 text-muted ">¿Te interesa viajar?</h6>
+                                <p class="card-text ">Contáctate con nosotros para darte la mejor atención posible y ofrecerte el viaje de tus sueños.</p>
+                                <button type="button" class="btn btn-info">Mas Información</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contacto-->
+    <section id="section3">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-xs-12 col-md-6 col-lg-4 ">
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4 ">
+                    <div class="card mb-5 " style="width: 18rem; border-color: black; border-radius: 0px; ">
+                        <div class="card-body " style="background-color: thistle;">
+                            <h3 style="color: black;"> <b>Contáctanos</b></h3>
+                            <br>
+                            <h6>Nombre y Apellido</h6>
+                            <input id=" NombreCompleto " type="text " placeholder="Nombre Completo " />
+                            <br>
+                            <br>
+                            <h6>Correo Electrónico</h6>
+                            <input id="NombreCompleto " type="text " placeholder="nombre@ejemplo.com " />
+                            <br>
+                            <br>
+                            <button type="button " class="btn btn-primary ">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+
+    <!--Pie de Página-->
+    <footer>
+        <div class="container">
+            <div class="row ">
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="text-align: left;">
+                        <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    © Athenas Airlines 2021.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <br>
+    <br>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+</body>
+
+</html>
